@@ -24,7 +24,7 @@ class AuthorsController < ApplicationController
     
     @author = Author.new(author_params)
     @book=@author.books.build(book_params)
-    debugger
+
     @book.save
 
 
